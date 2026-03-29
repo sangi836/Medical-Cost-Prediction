@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - MedicalPredict</title>
+
+  <!-- Google Fonts & Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Materialize CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ede7f6, #e3f2fd);
+      min-height: 100vh;
+      margin: 0;
+      color: #333;
+    }
+
+    nav.purple.darken-4 {
+      background: linear-gradient(90deg, #5e35b1, #8e24aa);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .brand-logo {
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .nav-wrapper ul li a {
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+
+    .nav-wrapper ul li a:hover {
+      background-color: transparent !important;
+      color: #ffeb3b;
+    }
+
+    .about-section {
+      max-width: 900px;
+      margin: 120px auto 50px auto;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      padding: 3rem 4rem;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px);
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      color: #4a148c;
+      font-weight: 700;
+      font-size: 2.2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    p {
+      color: #444;
+      font-size: 1.1rem;
+      line-height: 1.7rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .highlight {
+      color: #8e24aa;
+      font-weight: 600;
+    }
+
+    .footer {
+      background: linear-gradient(90deg, #5e35b1, #8e24aa);
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+      margin-top: 4rem;
+      box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-home {
+      background: linear-gradient(90deg, #6a1b9a, #ab47bc);
+      border-radius: 10px;
+      color: #fff !important;
+      text-transform: none;
+      padding: 0.8rem 1.8rem;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(171, 71, 188, 0.4);
+    }
+
+    .btn-home:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(171, 71, 188, 0.5);
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="purple darken-4">
+    <div class="nav-wrapper container">
+      <a href="/" class="brand-logo">MedicalPredict</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+  </ul>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <h2>About <span class="highlight">MedicalPredict</span></h2>
+    <p>
+      <b>MedicalPredict</b> is an AI-powered prediction platform designed to estimate 
+      individual medical insurance costs in seconds.
+      By analyzing key health indicators such as <span class="highlight">Age, BMI, Smoking Habits, and Region</span>, 
+      it delivers quick and reliable cost predictions using advanced machine learning models.
+    </p>
+    <p>
+      This project helps both individuals and insurance companies better understand 
+      the impact of lifestyle and demographic factors on healthcare costs, 
+      promoting smarter financial and medical decisions.
+    </p>
+    <p>
+      Built with <span class="highlight">Flask, Python, and Machine Learning</span>, 
+      this tool demonstrates the power of data-driven decision-making in real-world applications.
+    </p>
+
+    <a href="/" class="btn-home">🏠 Back to Home</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 MedicalPredict | Developed with ❤️ using Flask & ML</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - MedicalPredict</title>
+
+  <!-- Google Fonts & Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Materialize CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ede7f6, #e3f2fd);
+      min-height: 100vh;
+      margin: 0;
+      color: #333;
+    }
+
+    nav.purple.darken-4 {
+      background: linear-gradient(90deg, #5e35b1, #8e24aa);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .brand-logo {
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .nav-wrapper ul li a {
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+
+    .nav-wrapper ul li a:hover {
+      background-color: transparent !important;
+      color: #ffeb3b;
+    }
+
+    .about-section {
+      max-width: 900px;
+      margin: 120px auto 50px auto;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      padding: 3rem 4rem;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px);
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      color: #4a148c;
+      font-weight: 700;
+      font-size: 2.2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    p {
+      color: #444;
+      font-size: 1.1rem;
+      line-height: 1.7rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .highlight {
+      color: #8e24aa;
+      font-weight: 600;
+    }
+
+    .footer {
+      background: linear-gradient(90deg, #5e35b1, #8e24aa);
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+      margin-top: 4rem;
+      box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-home {
+      background: linear-gradient(90deg, #6a1b9a, #ab47bc);
+      border-radius: 10px;
+      color: #fff !important;
+      text-transform: none;
+      padding: 0.8rem 1.8rem;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(171, 71, 188, 0.4);
+    }
+
+    .btn-home:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(171, 71, 188, 0.5);
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="purple darken-4">
+    <div class="nav-wrapper container">
+      <a href="/" class="brand-logo">MedicalPredict</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+  </ul>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <h2>About <span class="highlight">MedicalPredict</span></h2>
+    <p>
+      <b>MedicalPredict</b> is an AI-powered prediction platform designed to estimate 
+      individual medical insurance costs in seconds.
+      By analyzing key health indicators such as <span class="highlight">Age, BMI, Smoking Habits, and Region</span>, 
+      it delivers quick and reliable cost predictions using advanced machine learning models.
+    </p>
+    <p>
+      This project helps both individuals and insurance companies better understand 
+      the impact of lifestyle and demographic factors on healthcare costs, 
+      promoting smarter financial and medical decisions.
+    </p>
+    <p>
+      Built with <span class="highlight">Flask, Python, and Machine Learning</span>, 
+      this tool demonstrates the power of data-driven decision-making in real-world applications.
+    </p>
+
+    <a href="/" class="btn-home">🏠 Back to Home</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 MedicalPredict | Developed with ❤️ using Flask & ML</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+  </script>
+</body>
+</html>
